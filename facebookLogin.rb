@@ -11,8 +11,19 @@ emailBar.send_keys "austinspreadsheet@gmail.com" # puts in the email
 passwordBar.send_keys "YOURPASSWORD" # puts in the password
 loginButton.click # clicks the login button
 
-links = driver.find_elements(:class,"fbNubButton") # finds the chat bar
-links[0].click # opens the chat bar
+driver.manage.window.resize_to(1300,940) #maximizes the window
 
-#puts links[0].text
-#puts links[1].text
+friends = driver.find_elements(:class,"_55lr") # gather all your friends
+
+puts friends
+
+#links = driver.find_elements(:class,"fbNubButton") # finds the chat bar
+#driver.manage.timeouts.page_load = 10
+#links[0].click # opens the chat bar
+#links[1].click # NOTE that sometime it works and sometimes it doesn't but if you click both it usually works, so the error is ok
+
+#driver.execute_script("$('._55lr').click()",element)
+
+#friends = driver.find_elements(:class,"_55lr") # gather all your friends
+
+#puts friends
