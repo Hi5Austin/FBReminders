@@ -1,3 +1,4 @@
+# Current Status: Will send you the last message you sent it
 # Facebook Reminders
 Final product will be a virtual assitant that will interact with you through facebook chat
 
@@ -17,4 +18,4 @@ Facebook Account for your virtual assistant: Go make one
 
 #Make sure you are your virtual assistant's only friend
 
-#Current Status: Will send you the last message you sent it
+#Just run the script in terminal and start talking to your virtual assitant through facebook :)
