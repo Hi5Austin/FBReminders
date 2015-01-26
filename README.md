@@ -16,3 +16,5 @@ Selenium-Webdriver gem: gem install selenium-webdriver
 Facebook Account for your virtual assistant: Go make one
 
 #Make sure you are your virtual assistant's only friend
+
+#Current Status: Will send you the last message you sent it
