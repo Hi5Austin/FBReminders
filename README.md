@@ -3,14 +3,14 @@ Final product will be a virtual assitant that will interact with you through fac
 
 Do things like set reminders and quiz yourself on different topics
 
-Currently in dev
+At this point you could customize a message response to do whatever you want
 
-## Dev records
+## What You Need
 
-2015-01-21
+Chromedriver for your OS: Downlaoded the chromedriver at http://chromedriver.storage.googleapis.com/index.html?path=2.13/ and put it in the directory /usr/bin
 
-Studied up on the selenium-webdriver gem
+Selenium-Webdriver gem: gem install selenium-webdriver
 
-! First problem, I did not have the chromedriver to use chrome with the selenium gem
+Facebook Account for your virtual assistant: Go make one
 
-Downlaoded the chromedriver at http://chromedriver.storage.googleapis.com/index.html?path=2.13/ and put it in the directory /usr/bin
+#Make sure you are your virtual assistants only friend
