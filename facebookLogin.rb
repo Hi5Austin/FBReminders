@@ -22,8 +22,8 @@ def setup
   $driver.manage.window.resize_to(1300,940)
 
   #INPUTS THE VA'S EMAIL, THEN IT'S PASSWORD, THE CLICKS THE LOGIN BUTTON
-  email_bar.send_keys "austinspreadsheet@gmail.com" 
-  password_bar.send_keys "iamfakesiri"
+  email_bar.send_keys "YOUREMAIL" 
+  password_bar.send_keys "YOURPASSWORD"
   login_button.click 
 
   #FINDS YOUR PICTURE IN THE CHAT SIDEBAR, THEN CLICKS IT
