@@ -4,7 +4,7 @@
 
 ## If you send it "Time", it will send you the time
 
-## If you send it "Remind me in x seconds to y", it will send you y after x seconds
+## If you send it "Remind me in x seconds to y", it will send you y after x seconds (IT ONLY WORKS FOR SECONDS for now)
 
 # Facebook Reminders
 Final product will be a virtual assitant that will interact with you through facebook chat
