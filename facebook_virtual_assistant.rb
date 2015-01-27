@@ -5,6 +5,6 @@ setup
 running = true
 
 while running
-	sleep(5)
+	sleep(3)
 	get_messages
 end

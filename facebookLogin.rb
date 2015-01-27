@@ -3,6 +3,11 @@ require 'pry'
 
 #SETUPS THE VIRTUALS ASSISTANT 
 def setup
+
+  #SETS UP THE TIME GETTING VARIABLE
+  $time = Time.new
+  $reminder = 0
+  $index
   
   #DEFINES DRIVER, THEN GOES TO FACEBOOK
   $driver = Selenium::WebDriver.for :chrome 
@@ -17,8 +22,8 @@ def setup
   $driver.manage.window.resize_to(1300,940)
 
   #INPUTS THE VA'S EMAIL, THEN IT'S PASSWORD, THE CLICKS THE LOGIN BUTTON
-  email_bar.send_keys "YOUR_VA_EMAIL" 
-  password_bar.send_keys "YOUR_VA_PASSWORD"
+  email_bar.send_keys "austinspreadsheet@gmail.com" 
+  password_bar.send_keys "iamfakesiri"
   login_button.click 
 
   #FINDS YOUR PICTURE IN THE CHAT SIDEBAR, THEN CLICKS IT
@@ -73,11 +78,26 @@ def get_messages
   # IF THE LAST EXECUTED COMMAND IS NOT THE LAST MESSAGE COPY, IT MAKES THE LAST EXECUTED COMMAND THE LAST MESSAGE COPY THEN EXECUTES IT
   if $last_message != $last_message_copy
     $last_message = $last_message_copy
-    send_message $last_message
+    if $last_message == "Time"
+      send_message $time.inspect
+    elsif $last_message.include? "Remind me in "
+      $reminder = $last_message[13,$last_message.length - 1]
+      create_reminder $reminder
+    else  
+      send_message $last_message
+    end   
   end
 end
 
+def create_reminder string
+  reminder_array = string.split(" ")
+  reminder_array.delete_at(2)
+  sleep(reminder_array[0].to_f) 
+  send_message reminder_array[2] 
+end
 
+
+#Remind me in 2 minutes to eat
 #_5yl5 class of span of my message
 
 #THINGS THAT THIS THING COULD DO
